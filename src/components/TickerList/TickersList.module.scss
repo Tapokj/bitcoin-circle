@@ -1,0 +1,36 @@
+@import '../../index.scss';
+
+.ticker-list {
+    min-width: 290px;
+
+    @media (max-width: 320px) {
+        min-width: 250px;
+    }
+
+  .ticker-element {
+    padding: 1rem;
+    font-size: 1.4rem;
+    display: flex;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    width: 21.8rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+    @media (max-width: 900px) {
+        width: 100%;
+        padding: 1rem;
+    }
+  }
+
+  .ticker-element.active {
+      color: $green;
+  }
+
+  .ticker-element {
+      &:nth-child(odd) {
+          background-color: $black;
+      }
+  }
+}

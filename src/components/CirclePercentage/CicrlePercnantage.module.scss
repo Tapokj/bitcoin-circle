@@ -1,0 +1,26 @@
+.chart__elements {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  @media (max-width: 900px) {
+      margin-bottom: 15px;
+  }
+
+  .flagged-trades {
+    position: absolute;
+    font-size: 18px;
+    height: 190px;
+    background-color: #292b2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 190px;
+    border-radius: 50%;
+    margin-top: 55px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+}
